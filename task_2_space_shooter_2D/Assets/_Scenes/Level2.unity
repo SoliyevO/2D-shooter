@@ -2402,6 +2402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Canvas UI
       objectReference: {fileID: 0}
+    - target: {fileID: 6000756414529956399, guid: 1be6a82ae59dad8449365208b06f2cfb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
