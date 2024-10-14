@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
@@ -140,6 +140,19 @@ public class Health : MonoBehaviour
         }
     }
 
+    //  // O'yinchiga jon qo'shadigan funksiya (chaqmoq yig'ilganda)
+    // public void ReceiveHealing(int healingAmount)
+    // {
+    //     currentHealth += healingAmount; // Jonni oshirish
+    //     currentHealth = Mathf.Clamp(currentHealth, 0, maximumHealth); // Jonni maksimal qiymatdan oshirmaslik
+    // }
+
+    // // O'yinchining joni 1 taga oshadigan funksiya
+    // public void HealOne()
+    // {
+    //     ReceiveHealing(1); // 1 jon qo'shadi
+    // }
+
     /// <summary>
     /// Description:
     /// Applies healing to the health, capped out at the maximum health.
@@ -159,11 +172,16 @@ public class Health : MonoBehaviour
         CheckDeath();
     }
 
+    
+    
+
     [Header("Effects & Polish")]
     [Tooltip("The effect to create when this health dies")]
     public GameObject deathEffect;
     [Tooltip("The effect to create when this health is damaged")]
     public GameObject hitEffect;
+
+    
 
     /// <summary>
     /// Description:
@@ -184,6 +202,19 @@ public class Health : MonoBehaviour
         }
         return false;
     }
+
+    // // O'yinchiga jon qo'shadigan funksiya (chaqmoq yig'ilganda)
+    // public void ReceiveHealing(int healingAmount)
+    // {
+    //     currentHealth += healingAmount; // Jonni oshirish
+    //     currentHealth = Mathf.Clamp(currentHealth, 0, maximumHealth); // Jonni maksimal qiymatdan oshirmaslik
+    // }
+
+    // // O'yinchining joni 1 taga oshadigan funksiya
+    // public void HealOne()
+    // {
+    //     (1); // 1 jon qo'shadi
+    // }
 
     /// <summary>
     /// Description:
