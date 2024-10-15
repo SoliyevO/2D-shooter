@@ -140,18 +140,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    //  // O'yinchiga jon qo'shadigan funksiya (chaqmoq yig'ilganda)
-    // public void ReceiveHealing(int healingAmount)
-    // {
-    //     currentHealth += healingAmount; // Jonni oshirish
-    //     currentHealth = Mathf.Clamp(currentHealth, 0, maximumHealth); // Jonni maksimal qiymatdan oshirmaslik
-    // }
-
-    // // O'yinchining joni 1 taga oshadigan funksiya
-    // public void HealOne()
-    // {
-    //     ReceiveHealing(1); // 1 jon qo'shadi
-    // }
+    
 
     /// <summary>
     /// Description:
@@ -203,19 +192,7 @@ public class Health : MonoBehaviour
         return false;
     }
 
-    // // O'yinchiga jon qo'shadigan funksiya (chaqmoq yig'ilganda)
-    // public void ReceiveHealing(int healingAmount)
-    // {
-    //     currentHealth += healingAmount; // Jonni oshirish
-    //     currentHealth = Mathf.Clamp(currentHealth, 0, maximumHealth); // Jonni maksimal qiymatdan oshirmaslik
-    // }
-
-    // // O'yinchining joni 1 taga oshadigan funksiya
-    // public void HealOne()
-    // {
-    //     (1); // 1 jon qo'shadi
-    // }
-
+    
     /// <summary>
     /// Description:
     /// Handles the death of the health. If a death effect is set, it is created. If lives are being used, the health is respawned.
@@ -291,4 +268,19 @@ public class Health : MonoBehaviour
         }
         Destroy(this.gameObject);
     }
+
+    // Star scriptiga bog'lanadigan joy
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Star")) // Star bilan to'qnashuv
+        {
+            Star starScript = other.GetComponent<Star>(); // Star scriptini olish
+            if (starScript != null)
+            {
+                ReceiveHealing(starScript.healthToAdd); // Star qo'shgan jonni olish
+                Destroy(other.gameObject); // Star ob'ektini yo'q qilish
+            }
+        }
+    }
+
 }
