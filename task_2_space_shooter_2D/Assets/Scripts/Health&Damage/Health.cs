@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 /// <summary>
 /// This class handles the health state of a game object.
@@ -10,8 +10,8 @@ using UnityEngine;
 /// Implementation Notes: 2D Rigidbodies must be set to never sleep for this to interact with trigger stay damage
 /// </summary>
 public class Health : MonoBehaviour
-{
-    
+{ 
+    public Text LifeCount;
     [Header("Team Settings")]
     [Tooltip("The team associated with this damage")]
     public int teamId = 0;
@@ -232,6 +232,7 @@ public class Health : MonoBehaviour
     void HandleDeathWithLives()
     {
         currentLives -= 1;
+        UpdateLifeCount(currentLives);
         if (currentLives > 0)
         {
             Respawn();
@@ -275,12 +276,19 @@ public class Health : MonoBehaviour
     public void AddLife(int lifeAmount)
     {
         currentLives += lifeAmount;
+        UpdateLifeCount(currentLives);
         if (currentLives > maximumLives)
         {
             currentLives = maximumLives; // Hayotlarni maximumdan oshirmaslik
         }
 
         Debug.Log("Current Lives: " + currentLives);
+    }
+
+    public void UpdateLifeCount(int val)
+    {
+         LifeCount.text = "Life Count: " + val.ToString();
+
     }
 
 

@@ -2555,6 +2555,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1be6a82ae59dad8449365208b06f2cfb, type: 3}
+--- !u!114 &3350637090294465902 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2308938307726051465, guid: 1be6a82ae59dad8449365208b06f2cfb, type: 3}
+  m_PrefabInstance: {fileID: 3350637090294465901}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4292097517783736258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2603,6 +2614,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1793301094776078567, guid: 5b1cc1653b836c84b80f601f8356a3ef, type: 3}
+      propertyPath: LifeCount
+      value: 
+      objectReference: {fileID: 3350637090294465902}
     - target: {fileID: 2995168748010546981, guid: 5b1cc1653b836c84b80f601f8356a3ef, type: 3}
       propertyPath: m_SleepingMode
       value: 1
