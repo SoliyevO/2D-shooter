@@ -134,6 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32d7a30217a0c54a8e3f945331e13e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthToAdd: 1
+  pickupEffect: {fileID: 0}
 --- !u!82 &6591232102683574293
 AudioSource:
   m_ObjectHideFlags: 0
@@ -145,10 +147,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a5b939b70b55d8e49a1ad02668430984, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

@@ -1150,22 +1150,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Star (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5655650072047522189, guid: af3420ff372172f478c58e11d4406da6, type: 3}
-      propertyPath: m_TagString
-      value: Star
-      objectReference: {fileID: 0}
-    - target: {fileID: 6591232102683574293, guid: af3420ff372172f478c58e11d4406da6, type: 3}
-      propertyPath: Loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6591232102683574293, guid: af3420ff372172f478c58e11d4406da6, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7280736364225032464, guid: af3420ff372172f478c58e11d4406da6, type: 3}
-      propertyPath: pickupEffect
-      value: 
-      objectReference: {fileID: 2452382815751308013, guid: 990f3751046a4d840806774f23579fe2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1437,10 +1421,6 @@ PrefabInstance:
     - target: {fileID: 8282131552441171986, guid: 495642eafc9670944a4a57f177cfc4ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282131552441171989, guid: 495642eafc9670944a4a57f177cfc4ce, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8282131552441171991, guid: 495642eafc9670944a4a57f177cfc4ce, type: 3}
       propertyPath: m_Name
@@ -1810,14 +1790,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2995168748010546981, guid: 5b1cc1653b836c84b80f601f8356a3ef, type: 3}
-      propertyPath: m_SleepingMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2995168748010546981, guid: 5b1cc1653b836c84b80f601f8356a3ef, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3403404039742427128, guid: 5b1cc1653b836c84b80f601f8356a3ef, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1826,25 +1798,9 @@ PrefabInstance:
       propertyPath: projectileHolder
       value: 
       objectReference: {fileID: 148865923}
-    - target: {fileID: 6952092179379653200, guid: 5b1cc1653b836c84b80f601f8356a3ef, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952092179379653200, guid: 5b1cc1653b836c84b80f601f8356a3ef, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8907733138007192924, guid: 5b1cc1653b836c84b80f601f8356a3ef, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8907733138007192924, guid: 5b1cc1653b836c84b80f601f8356a3ef, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8907733138007192924, guid: 5b1cc1653b836c84b80f601f8356a3ef, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1903,22 +1859,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Star
       objectReference: {fileID: 0}
-    - target: {fileID: 5655650072047522189, guid: af3420ff372172f478c58e11d4406da6, type: 3}
-      propertyPath: m_TagString
-      value: Star
-      objectReference: {fileID: 0}
-    - target: {fileID: 6591232102683574293, guid: af3420ff372172f478c58e11d4406da6, type: 3}
-      propertyPath: Loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6591232102683574293, guid: af3420ff372172f478c58e11d4406da6, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7280736364225032464, guid: af3420ff372172f478c58e11d4406da6, type: 3}
-      propertyPath: pickupEffect
-      value: 
-      objectReference: {fileID: 2452382815751308013, guid: 990f3751046a4d840806774f23579fe2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

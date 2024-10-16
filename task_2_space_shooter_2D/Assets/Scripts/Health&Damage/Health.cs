@@ -269,18 +269,17 @@ public class Health : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    // Star scriptiga bog'lanadigan joy
-    private void OnTriggerEnter2D(Collider2D other)
+    // Funksiya: Hayot qo'shish
+    public void AddLife(int lifeAmount)
     {
-        if (other.gameObject.CompareTag("Star")) // Star bilan to'qnashuv
+        currentLives += lifeAmount;
+        if (currentLives > maximumLives)
         {
-            Star starScript = other.GetComponent<Star>(); // Star scriptini olish
-            if (starScript != null)
-            {
-                ReceiveHealing(starScript.healthToAdd); // Star qo'shgan jonni olish
-                Destroy(other.gameObject); // Star ob'ektini yo'q qilish
-            }
+            currentLives = maximumLives; // Hayotlarni maximumdan oshirmaslik
         }
+
+        Debug.Log("Current Lives: " + currentLives);
     }
+
 
 }

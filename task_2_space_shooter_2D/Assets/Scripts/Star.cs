@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class Star : MonoBehaviour
 {
-    public int healthToAdd = 1; // Qo'shiladigan jon miqdori
+    public int livesToAdd = 1; // Qo'shiladigan hayot miqdori
     public GameObject pickupEffect; // Zarracha effekti
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Player")
+        if (other.CompareTag("Player")) // Tag yordamida tekshirish
         {
             // Jon qo'shish
             Health playerHealth = other.GetComponent<Health>();
             if (playerHealth != null)
             {
-                playerHealth.ReceiveHealing(healthToAdd); // ReceiveHealing methodini chaqirish
-                Debug.Log("Health added!");
+                playerHealth.AddLife(livesToAdd); // Hayotni qo'shish
+                Debug.Log("Life added!");
+
 
                 // Ovoz
                 GetComponent<AudioSource>().Play();
