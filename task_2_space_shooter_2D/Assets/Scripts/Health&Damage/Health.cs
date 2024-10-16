@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
+
 /// <summary>
 /// This class handles the health state of a game object.
 /// 
@@ -10,6 +11,7 @@ using UnityEngine;
 /// </summary>
 public class Health : MonoBehaviour
 {
+    
     [Header("Team Settings")]
     [Tooltip("The team associated with this damage")]
     public int teamId = 0;
